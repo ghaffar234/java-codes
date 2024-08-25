@@ -1,10 +1,15 @@
 
-package Abstraction;
+package Interface;
 
-public abstract class Shape {
-  public abstract void calculatearea(); 
-  public void draw(){
-      System.out.println("ghafafr");
-      
-}
+
+public interface Shape {
+
+    public String name=null;
+     static int area=12;
+     
+     public abstract void name();
+     
+    
+    
+    
 }
