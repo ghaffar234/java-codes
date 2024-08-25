@@ -1,25 +1,17 @@
 
-package Polimorphism;
-
+package Inheritance;
 
 public class Test {
     public static void main(String[] args) {
-        bird b=new bird();
-        Animal a4=null;
-        a4.running();
-        b.running();
-        Dogs d=new Dogs();
-        d.running();
-        Animal a=new bird();
-        a.running();
-        Animal a1= (Animal)a;
-        a1.running();
-        Animal a2=new Dogs();
-        a2.running();
-        Animal a3=(Animal)a2;
+        Shapes s=new Shapes(3,4,6,7);
+        Triangle t=new Triangle(5,7,3,4);
+        t.calculateArea(2, 8);
+       Rectangle R=new Rectangle(3,4,6,7);
+       R.calculateArea(4, 5);
+       Squre S=new Squre (3,4,6,7);
+       S.calculateArea(5);
+       
         
-        System.out.println("final answer of down casting");
-        a3.running();
         
     }
     

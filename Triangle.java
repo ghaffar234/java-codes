@@ -1,12 +1,19 @@
 
-package Abstraction;
+package Inheritance;
 
-public  class Triangle extends Circle{
+
+
+public class Triangle extends Shapes{
     
-    public void calculatearea(){
-        System.out.println("ghaffar bajwa ");
-    } 
-    public void draw(){
-        System.out.println("ahmad ameen");
-}
-}
+    public Triangle(int length, int wrigth, int height, int base) {
+        super(length, wrigth, height, base);
+    }
+    public int calculateArea(int length,int base){
+        int area=length*base;
+        System.out.println("area of the triangle is "+area);
+        return area;
+    
+    }
+    
+} 
+
