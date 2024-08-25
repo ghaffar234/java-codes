@@ -1,24 +1,26 @@
 
-package Abstraction;
+package Polimorphism;
+
 
 public class Test {
     public static void main(String[] args) {
-         try{
-             Triangle t=new Triangle();
-        Circle c = new Circle();
-        Triangle t1=(Triangle)c;
-        Circle c1=new Triangle();
-      // t.calculatearea();
-      // t.draw();
-      // c.draw();
-       c1.draw();
-       t1.calculatearea();
-         }catch(Throwable e){
-             e.getMessage();
-             System.out.println("Type cast exeption");
-             
-         }
+        bird b=new bird();
+        Animal a4=null;
+        a4.running();
+        b.running();
+        Dogs d=new Dogs();
+        d.running();
+        Animal a=new bird();
+        a.running();
+        Animal a1= (Animal)a;
+        a1.running();
+        Animal a2=new Dogs();
+        a2.running();
+        Animal a3=(Animal)a2;
+        
+        System.out.println("final answer of down casting");
+        a3.running();
+        
     }
-
-   
+    
 }
